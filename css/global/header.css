@@ -1,0 +1,55 @@
+.header-bg {
+ background: linear-gradient(var(--cor-1), var(--cor-3));
+ padding: 20px 0px 40px 0px;
+}
+.header {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+}
+.header-menu {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 40px;
+}
+.header-menu a {
+ padding: 16px 0px;
+ display: inline-block;
+ position: relative;
+}
+.header-menu a::after {
+ content: '';
+ display: block;
+ height: 2px;
+ width: 0px;
+ background: var(--cor-4);
+ margin-top: 4px;
+ transition: 0.3s;
+ position: absolute;
+}
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
+ width: 100%;
+}
+.pesquisa {
+ display: inline-flex;
+ gap: 5px;
+ border-radius: 50px;
+}
+.pesquisa-botao {
+ border-radius: 50px;
+ width: 40px;
+ transition-duration: 500ms;
+ background-image: url(../../img/icones/search-svgrepo-com.svg);
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: right;
+ padding-right: 23px;
+}
+.pesquisa-botao:focus {
+ border-radius: 10px;
+ width: 300px;
+ border: 4px solid purple;
+ font: 400 1.5rem/1.5 'Roboto', sans-serif;
+}

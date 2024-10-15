@@ -1,0 +1,25 @@
+.introducao-bg {
+ background: var(--cor-3);
+ box-shadow: inset 0 -35px var(--cor-0);
+}
+.introducao {
+ display: grid;
+ text-align: center;
+ grid-template-columns: 1fr 1fr;
+ gap: 0 40px;
+}
+.introducao-conteudo {
+ padding-bottom: 100px;
+}
+.introducao img {
+ width: 100%;
+ object-fit: cover;
+ height: 100%;
+ border-radius: 8px;
+}
+.introducao h1 {
+ margin-bottom: 32px;
+}
+.introducao p {
+ margin-bottom: 20px;
+}
